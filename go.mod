@@ -1,4 +1,4 @@
-module ocr_web
+module github.com/linimbus/ocr_web
 
 go 1.23.3
 

@@ -1,8 +1,8 @@
 package actions
 
 import (
-	"ocr_web/public"
-	"ocr_web/templates"
+	"github.com/linimbus/ocr_web/public"
+	"github.com/linimbus/ocr_web/templates"
 
 	"github.com/gobuffalo/buffalo/render"
 )

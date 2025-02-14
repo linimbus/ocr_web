@@ -1,7 +1,7 @@
 package grifts
 
 import (
-	"ocr_web/actions"
+	"github.com/linimbus/ocr_web/actions"
 
 	"github.com/gobuffalo/buffalo"
 )

@@ -9,7 +9,6 @@ import (
 
 // FilesController 文件控制器
 type FilesController struct {
-	*buffalo.BaseController
 }
 
 // Preview 获取并显示文件预览

@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"sync"
 
-	"ocr_web/locales"
-	"ocr_web/models"
-	"ocr_web/public"
+	"github.com/linimbus/ocr_web/locales"
+	"github.com/linimbus/ocr_web/models"
+	"github.com/linimbus/ocr_web/public"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/buffalo-pop/v3/pop/popmw"

@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"ocr_web/actions"
+	"github.com/linimbus/ocr_web/actions"
 )
 
 // main is the starting point for your Buffalo application.
