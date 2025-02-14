@@ -1,0 +1,12 @@
+---
+development:
+  dialect: "sqlite3"
+  database: D:\workspace\ocr-web\ocr_web_ocr_web_development.sqlite
+
+test:
+  dialect: "sqlite3"
+  database: D:\workspace\ocr-web\ocr_web_ocr_web_test.sqlite
+
+production:
+  dialect: "sqlite3"
+  database: D:\workspace\ocr-web\ocr_web_ocr_web_production.sqlite
