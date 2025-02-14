@@ -1,0 +1,48 @@
+<h1>Files#Preview</h1>
+<div class="container">
+  <div class="row">
+    <!-- 文件预览窗口 -->
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">文件预览</h5>
+        </div>
+        <div class="card-body">
+          <div class="preview-window" style="min-height: 400px; border: 1px solid #ddd; padding: 15px;">
+            <!-- 预览内容将在这里显示 -->
+            <% if (file != nil && len(file.Content) > 0) { %>
+              <pre><%= file.Content %></pre>
+            <% } else { %>
+              <p class="text-center text-muted">暂无预览内容</p>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 文件信息列表 -->
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">文件信息</h5>
+        </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <strong>文件名:</strong> <%= file.Name %>
+            </li>
+            <li class="list-group-item">
+              <strong>文件大小:</strong> <%= file.Size %> bytes
+            </li>
+            <li class="list-group-item">
+              <strong>上传时间:</strong> <%= file.CreatedAt.Format("2006-01-02 15:04:05") %>
+            </li>
+            <li class="list-group-item">
+              <strong>文件类型:</strong> <%= file.ContentType %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

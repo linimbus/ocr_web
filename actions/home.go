@@ -11,3 +11,9 @@ import (
 func HomeHandler(c buffalo.Context) error {
 	return c.Render(http.StatusOK, r.HTML("home/index.plush.html"))
 }
+
+// HomeIndex default implementation.
+func HomeIndex(c buffalo.Context) error {
+	return c.Render(http.StatusOK, r.HTML("home/index.html"))
+}
+
